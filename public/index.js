@@ -3,7 +3,7 @@
     const TASKS_KEY = "tasks"
 
     class TaskManager {
-        
+
         constructor(){
             this.tasks = JSON.parse(localStorage.getItem(TASKS_KEY)) || []
         }
@@ -13,7 +13,7 @@
         }
 
         addTask(task){
-            let id = this.tasks.length <= 0 ? 0 : this.tasks[this.tasks.length-1].id + 1 
+            let id = this.tasks.length <= 0 ? 0 : this.tasks[this.tasks.length-1].id + 1
             this.tasks.push({id, task})
         }
 
@@ -22,7 +22,7 @@
         }
 
         updateTask(newTask){
-            let targetTask = this.tasks.find((task) => task.id == newTask.id) 
+            let targetTask = this.tasks.find((task) => task.id == newTask.id)
             targetTask.task = newTask.task
         }
     }
@@ -43,11 +43,11 @@
 
     function handleSubmit(){
         const taskName = txtTaskName.value
-        if(!validate(taskName)){ 
+        if(!validate(taskName)){
             alert("Task must be filled")
             return
         }
-        
+
         if(hdfTask.value !== null && hdfTask.value !== undefined && hdfTask.value !== ""){
             taskManager.updateTask({task: txtTaskName.value, id: JSON.parse(hdfTask.value).id})
         }else{
@@ -65,9 +65,9 @@
         if(tasks.length <= 0){
             var newRow = tBody.insertRow(tBody.rows.length)
             newRow.innerHTML = `<tr><td colspan="3" style="text-align: center">NO DATA</td></tr>`
-            return 
+            return
         }
-        
+
         let count = 0
         tasks.forEach(task => {
             let newRow = tBody.insertRow(tBody.rows.length)
@@ -101,7 +101,19 @@
         tBody.innerHTML = ""
     }
 
+    function registerServiceWorker(){
+        navigator.serviceWorker
+        .register('/serviceWorker.js')
+        .then(function(reg){
+            console.log("service worker registered", reg)
+        })
+        .catch(function(err){
+            console.log("error when registering service worker", err)
+        })
+    }
+
     function init(){
+        registerServiceWorker();
         populateTable()
     }
 
@@ -151,4 +163,4 @@
             deleteTask(targetID)
         }
     })
-})(window, document)    
+})(window, document)
