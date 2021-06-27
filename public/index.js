@@ -113,7 +113,7 @@
     }
 
     function init(){
-        registerServiceWorker();
+        registerServiceWorker()
         populateTable()
     }
 
