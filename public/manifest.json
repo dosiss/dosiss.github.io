@@ -33,13 +33,13 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
-    "scope": ".",
+    "start_url": "/public",
+    "scope": "/public",
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
     "theme_color": "#007BFF",
-    "description": "Simple task manager implementing some of PWA's hadouken!",
+    "description": "My shopping list",
     "dir": "ltr",
     "lang": "en-US"
   }
