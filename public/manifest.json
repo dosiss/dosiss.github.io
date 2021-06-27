@@ -33,7 +33,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/public",
+    "start_url": "/public/",
     "scope": "/public",
     "display": "standalone",
     "orientation": "portrait-primary",
