@@ -103,7 +103,7 @@
 
     function registerServiceWorker(){
         navigator.serviceWorker
-        .register('/serviceWorker.js')
+        .register('/public/serviceWorker.js')
         .then(function(reg){
             console.log("service worker registered", reg)
         })
