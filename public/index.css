@@ -80,9 +80,13 @@ body {
     font-family: 'Ranchers', cursive
 }
 
-#header-container img {
+#header-container .logo-img {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 80' x='0px' y='0px' fill='%230821db'%3E%3Cg data-name='Layer 1'%3E%3Cpath d='M32,4c-5,0-9,3.59-9,8v6H14a2,2,0,0,0-2,1.79l-4,38A2,2,0,0,0,10,60H54a2,2,0,0,0,2-2.21l-4-38A2,2,0,0,0,50,18H41V12C41,7.59,37,4,32,4Zm-5,8c0-2.21,2.24-4,5-4s5,1.79,5,4v6H27ZM48.2,22l3.58,34H12.22L15.8,22H23v4a2,2,0,0,0,4,0V22H37v4a2,2,0,0,0,4,0V22Z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 50px;
-
+  width: 50px;
+  display: block
 }
 
 #header-container h2 {
