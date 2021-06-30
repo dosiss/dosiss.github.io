@@ -3,24 +3,14 @@
     "short_name": "TaskManager",
     "icons": [
       {
-        "src": "/public/images/app_icon48x48.png",
+        "src": "/public/images/app_icon16x16.png",
         "type": "image/png",
-        "sizes": "48x48"
+        "sizes": "16x16"
       },
       {
-        "src": "/public/images/app_icon72x72.png",
+        "src": "/public/images/app_icon32x32.png",
         "type": "image/png",
-        "sizes": "72x72"
-      },
-      {
-        "src": "/public/images/app_icon96x96.png",
-        "type": "image/png",
-        "sizes": "96x96"
-      },
-      {
-        "src": "/public/images/app_icon144x144.png",
-        "type": "image/png",
-        "sizes": "144x144"
+        "sizes": "32x32"
       },
       {
         "src": "/public/images/app_icon192x192.png",
@@ -38,8 +28,8 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
-    "theme_color": "#007BFF",
-    "description": "My shopping list",
+    "theme_color": "#0821db",
+    "description": "Shopping Bag",
     "dir": "ltr",
     "lang": "en-US"
   }
