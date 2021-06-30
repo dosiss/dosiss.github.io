@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My shopping list</title>
+    <title>My shopping bag</title>
+    <meta name="robots" content="noindex" />
     <link href="index.css" rel="stylesheet"/>
     <link rel="icon" href="/public/favicon.ico"/>
     <link rel="apple-touch-icon" href="/public/apple-touch-icon.png">
@@ -22,16 +23,17 @@
                 <input type="hidden" id="hdfTask"/>
             </div>
             <div id="buttonContainer">
-                <button id="btnSubmit" type="submit" class="btn btn-primary">SUBMIT</button>
-                <button id="btnClosePopup" class="btn btn-danger">CLOSE</button>
+                <button id="btnSubmit" type="submit" class="btn">SUBMIT</button>
+                <button id="btnClosePopup" class="btn">CLOSE</button>
             </div>
         </form>
     </div>
     <main class="container main">
-        <div id="header-container">
+        <div id="header-container" class="d-flex align-items-end">
+            <img src="images/app_icon192x192.png" class="img-responsive" alt="">
             <h2>Shopping Bag</h2>
         </div>
-        <button class="btn btn-primary" id="btnAdd">ADD ITEM</button>
+        <button class="btn" id="btnAdd">ADD ITEM</button>
         <div class="table-responsive">
             <table class="table">
                 <thead>
