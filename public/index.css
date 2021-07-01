@@ -93,6 +93,20 @@ body {
     font-size: 2rem;
 }
 @media only screen and (max-width: 650px) {
+  #header-container {
+    padding-top: 0;
+    padding-bottom: 0
+  }
+  #btnAdd {
+    width: 100%
+  }
+  thead th:nth-child(3) {
+    content-visibility: hidden
+  }
+  tbody tr td:nth-child(3) {
+    text-align: right;
+    padding-bottom: .5rem
+  }
   #form-container {
     padding-left: 1rem;
     padding-right: 1rem
