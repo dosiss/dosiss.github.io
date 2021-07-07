@@ -1,6 +1,6 @@
 {
-    "name": "Task Manager",
-    "short_name": "TaskManager",
+    "name": "ShoppingBag",
+    "short_name": "ShoppingBag",
     "icons": [
       {
         "src": "/public/images/app_icon16x16.png",
